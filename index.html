@@ -161,7 +161,9 @@ filter:none;
   .sidebar{position:fixed;top:0;left:0;width:min(88vw,340px);height:100dvh;transform:translateX(-102%);transition:transform .25s ease;box-shadow:16px 0 40px rgba(0,0,0,.24)}
   .sidebar.open{transform:translateX(0)}
   .hero{padding:52px 20px 48px}
-  .content{padding:28px 15px 78px}
+  .main{position:relative;overflow:visible}
+  .content{position:relative;padding:28px 15px 78px}
+  #topBtn{box-shadow:0 8px 20px rgba(10,30,55,.22)}
   .guide{grid-template-columns:1fr 1fr}
   .session{margin:40px 0 56px}
   .session-head{gap:11px}
@@ -171,7 +173,14 @@ filter:none;
   .exercise-code{min-width:56px}
   .prompt-text{font-size:15px;padding:15px}
   .finish-box{grid-template-columns:1fr}
-  #topBtn{right:14px;bottom:14px}
+  #topBtn{
+    right:18px;
+    bottom:18px;
+    width:46px;
+    height:46px;
+    font-size:12px;
+    z-index:95;
+  }
 }
 @media (max-width:560px){
   .guide{grid-template-columns:1fr}
